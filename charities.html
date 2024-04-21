@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HelpHub - Charities List Page</title>
+</head>
+  <link rel="stylesheet" href="styles.css">
+<body class="body-class">
+
+  <header class="header-class">
+    <h1 class="title-class">HelpHub</h1>
+    <nav class="nav-class">
+      <a href="index.html" class="nav-link-class">Homepage</a> |
+      <a href="charities.html" class="nav-link-class">Charities List Page </a> |
+      <a href="charity_profile.html" class="nav-link-class">Charity Profile Page </a> 
+    </nav>
+  </header>
+
+  <section class="welcome-section-class">
+    <h2 class="section-title-class">Welcome to HelpHub's Charities List Page!</h2>
+    <p class="text-class">Here is a list of some local charites. This table includes some basic information for each charity such as the charity's name, location, and link for more information.</p>
+  </section>
+
+  <section class="table-class">
+<table>
+  <tr>
+    <th>Charity Name</th>
+    <th>Location</th>
+    <th>Link for More Information</th>
+  </tr>
+  <tr>
+    <td>Boys & Girls Club of Allentown</td>
+    <td>720 N 6th St, Allentown, PA 18102</td>
+    <td>Click <a href="charity_profile.html#B&GC">here</a> for more information about the "Boys & Girls Club of Allentown".</td>
+  </tr>
+  <tr>
+    <td>Allentown Art Museum</td>
+    <td>31 N 5th St, Allentown, PA 18101</td>
+    <td>Click <a href="charity_profile.html#AAM">here</a> for more information about the "Allentown Art Museum".</td>
+  </tr>
+  <tr>
+    <td>Camelot for Children</td>
+    <td>2354 W Emmaus Ave, Allentown, PA 18103</td>
+    <td>Click <a href="charity_profile.html#CFC">here</a> for more information about the "Camelot for Children".</td>
+  </tr>
+</table>
+  </section>
+  
+<section class="map-class"
+     <div id="map" style="height: 400px;"></div>
+ <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+var map = L.map('map').setView([40.6029, -75.4694], 10);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+    maxZoom: 18,
+}).addTo(map);
+
+fetch('path/to/your/geojson/data.json')
+  .then(response => response.json()) 
+  .then(data => {
+    L.geoJSON(data).addTo(map);
+  })
+  .catch(error => {
+    console.error('Error fetching GeoJSON data:', error);
+  });
+
+var marker = L.marker([40.6107, -75.4782]).addTo(map);
+marker.bindPopup("<b>720 N 6th St, Allentown, PA 18102</b>").openPopup();
+
+var marker2 = L.marker([40.6044, -75.4679]).addTo(map);
+marker2.bindPopup("<b>31 N 5th St, Allentown, PA 18101</b>").openPopup();
+
+var marker3 = L.marker([40.5673, -75.4728]).addTo(map);
+marker3.bindPopup("<b> 2354 W Emaus Ave, Allentown, PA 18103</b>").openPopup();
+</script>
+</section>
+  
+  <section class="picture-class">
+        <img src="allentown.png" alt="Photo of Allentown Skyline." class="image-class">
+  </section>
+  
+
+  <footer class="footer-class">
+    <p class="text-class">© 2024 by HelpHub. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+

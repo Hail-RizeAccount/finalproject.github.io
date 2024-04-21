@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HelpHub - Charity Profile Page</title>
+</head>
+  <link rel="stylesheet" href="styles.css">
+<body class="body-class">
+
+  <script src="charity_profile.js"></script>
+  
+  <header class="header-class">
+    <h1 class="title-class">HelpHub</h1>
+    <nav class="nav-class">
+      <a href="index.html" class="nav-link-class">Homepage</a> |
+      <a href="charities.html" class="nav-link-class">Charities List Page </a> |
+      <a href="charity_profile.html" class="nav-link-class">Charity Profile Page </a> 
+    </nav>
+  </header>
+
+  <section class="welcome-section-class">
+    <h2 class="section-title-class">Welcome to HelpHub's Charity Profile Page!</h2>
+    <p class="text-class">Here is a list of some of the local charites and specific details about each charity. Each section includes details about a single charity, this includes information such as a description of the charity, details about how an individual can help, and any upcoming events.</p>
+  </section>
+
+  <section class="B&GC-class">
+  <div id="B&GC"></div>
+    <h2 class="section-title-class">Boys & Girls Club of Allentown</h2>
+     <h3 class="section-title-class">Description</h3>
+    <p class="text-class">
+    The goal of the Boys & Girls Club of Allentown is to create a safe and stable environment for the youth of Allentown. This organization provides a compelling alternative to youth crime, gang membership, drugs, and other negative influences. And they hope to teach members to develop friendships, build self esteem, contribute to society, and achieve personal success. They have multiple locations including Teen Center, Sixth Street Clubhouse, and Cumberland Gardens Clubhouse.</p>
+    <h3 class="section-title-class">How to Help</h3>
+     <p class="text-class">
+     Some ways to help this organization is through donations and volunteering. You can volunteer online today, just make sure you have all your clearances before reaching out. 
+  </p>
+  
+  <button id="Button" type="button" class="button">Volunteer Now!</button>
+
+    <div id="form" style="display: none;">
+        <form id="input">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="phone_number">Phone Number:</label>
+            <input type="phone_number" id="phone_number" name="phone_number"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    
+    <h3 class="section-title-class">Upcoming Events</h3>
+     <p class="text-class">
+    Hover over the events button to see upcoming events.
+  </p>
+
+    <div id="box1" class="hover-class" onmouseover="mOver1(this)" onmouseout="mOut1(this)" 
+style="background-color:#D94A38;width:400px;height:20px;padding:40px;">
+Events for the Boys & Girls Club of Allentown</div>
+
+    <h3 class="section-title-class">Website</h3>
+        <p class="text-class">
+        To visit the Boys & Girls Club of Allentown's website, please click this <a href="https://www.bgcallentown.org/" class="nav-link-class">link</a>.
+  </p>
+    <img src="B&GC.png" alt="Photo of the Boys & Girls Club of Allentown." class="image-class">
+  </section>
+  
+    <section class="AAM-class">
+  <div id="AAM"></div>
+    <h2 class="section-title-class">Allentown Art Museum</h2>
+     <h3 class="section-title-class">Description</h3>
+    <p class="text-class">
+    The goal of the Allentown Art Museum is to share the beauty of art with the citizens of Allentown. They also work to bring community together by offering to organize and hold a variety of different events. The location for the art museum is 31 North Fifth Street
+Allentown, PA 18101.</p>
+    <h3 class="section-title-class">How to Help</h3>
+     <p class="text-class">
+     Some ways to help this organization is through donations and volunteering. You can volunteer online today. Volunteers serve as docents, work in the Museum store, staff hands-on art stations at events, help with office paperwork, and assist the curatorial staff with researching, cataloging and prepping for new exhibits. 
+  </p>
+    
+  <button id="Button2" type="button" class="button">Volunteer Now!</button>
+
+    <div id="form2" style="display: none;">
+        <form id="input2">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="phone_number">Phone Number:</label>
+            <input type="phone_number" id="phone_number" name="phone_number"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    
+    <h3 class="section-title-class">Upcoming Events</h3>
+     <p class="text-class">
+    Hover over the events button to see upcoming events.
+  </p>
+  
+<div id="box2" class="hover-class" onmouseover="mOver2(this)" onmouseout="mOut2(this)" 
+style="background-color:#D94A38;width:400px;height:20px;padding:40px;">
+Events for the Allentown Art Museum</div>
+
+    <h3 class="section-title-class">Website</h3>
+        <p class="text-class">
+        To visit the Allentown Art Museum's website, please click this <a href="https://www.allentownartmuseum.org/" class="nav-link-class">link</a>.
+  </p>
+    <img src="AAM.png" alt="Photo of the Allentown Art Museum." class="image-class">
+  </section>
+  
+    <section class="CFC-class">
+  <div id="CFC"></div>
+    <h2 class="section-title-class">Camelot for Children</h2>
+        <h3 class="section-title-class">Description</h3>
+    <p class="text-class">
+    The goal of Camelot for Children is to providing year-round social and educational opportunities to children with disabilities and chronic or terminal illnesses in a supportive, developmentally appropriate, enriching environment in order to make the magic of childhood accessible to children with unique needs. They have a single location at 2354 W. Emmaus Avenue
+Allentown PA 18103.</p>
+    <h3 class="section-title-class">How to Help</h3>
+     <p class="text-class">
+     Some ways to help this organization is through donations and volunteering. You can volunteer online today, just make sure you have all your clearances before reaching out. 
+  </p>
+ 
+  <button id="Button3" type="button" class="button">Volunteer Now!</button>
+
+    <div id="form3" style="display: none;">
+        <form id="input3">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="phone_number">Phone Number:</label>
+            <input type="phone_number" id="phone_number" name="phone_number"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    
+    <h3 class="section-title-class">Upcoming Events</h3>
+     <p class="text-class">
+     Hover over the events button to see upcoming events.
+  </p>
+      <div id="box3" class="hover-class" onmouseover="mOver3(this)" onmouseout="mOut3(this)" 
+style="background-color:#D94A38;width:400px;height:20px;padding:40px;">
+Events for the Camelot for Children</div>
+      
+    <h3 class="section-title-class">Website</h3>
+        <p class="text-class">
+        To visit the Camelot for Children's website, please click this <a href="https://camelotforchildren.org/" class="nav-link-class">link</a>.
+  </p>
+    <img src="CFC.png" alt="Photo of Camelot for Children." class="image-class">
+  </section>
+  
+
+  <footer class="footer-class">
+    <p class="text-class">© 2024 by HelpHub. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

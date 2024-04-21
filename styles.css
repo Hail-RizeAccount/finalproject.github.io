@@ -1,0 +1,53 @@
+@media screen and (min-width: 500px) {
+.body-class {background-color: #dbd3d8;}
+
+.header-class {background-color: #223843;color: #eff1f3;font-size:150%;text-align:center;font-family:Verdana}
+
+.nav-class { color:#eff1f3; background-color: #d77a61;}
+
+a:link {color: #223843; text-decoration: none;}
+a:visited { color: #223843;background-color: transparent; text-decoration: none;}
+a:hover { color: #d8b4a0;background-color: transparent; text-decoration: none;}
+a:active {color: black; background-color: transparent;  font-weight: bold;}
+
+.title-class  {color: #eff1f3;}
+
+.section-title-class  {color:#d77a61;}
+
+.text-class {color:black;}
+
+.image-class {center; border: 3px solid #d8b4a0; display: block; margin-left: auto;
+  margin-right: auto; }
+  
+  table, th, td {
+  border: 1px solid;border-color: #d77a61;
+}
+
+
+tr:nth-child(even) {background-color: LightGray;}
+tr:nth-child(odd) {background-color: #eff1f3;}
+
+.button {
+  background-color: #223843;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+
+.hover-class {
+  width: 600px !important; 
+  height: 70px !important; 
+  padding: 20px !important; 
+  background-color: #D94A38;
+  font-size: 18px;
+}
+
+
+.footer-class{ background-color: #eff1f3;color: #223843;}
+}
